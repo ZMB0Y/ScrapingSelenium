@@ -156,7 +156,7 @@ for url in links_vencidas:
         elif "Dependencia" in txt:
             dependencia = txt.replace("Dependencia", "").strip()
         elif "Categorías" in txt:
-            # capturamos categorías de la lista <ul>
+            #categorías de la lista <ul>
             ul = driver.find_elements(By.CSS_SELECTOR, ".datos ul li a")
             categorias = ", ".join([c.text for c in ul])
 
